@@ -13,6 +13,31 @@ test('create employee object', () => {
 // test get name from getName()
 test('gets employee name', () => {
     const employee = new Employee('Splinter', 100, 'datrat@kungfu.com');
-})
+
+    expect(employee.getName()).toEqual(expect.any(String));
+});
+
+// test get id from getId()
+test('gets employee id',() => {
+    const employee = new Employee('Splinter', 100, 'datrat@kungfu.com');
+
+    expect(employee.getId()).toEqual(expect.any(Number));
+});
+
+// test get email from getEmail()
+test('gets employee email', () => {
+    const employee = new Employee('Splinter', 100, 'datrat@kungfu.com');
+
+    expect(employee.getEmail()).toEqual(expect.any(String));
+});
+
+// test get role from getRole()
+test('gets employee role', () => {
+    const employee = new Employee('Splinter', 100, 'datrat@kungfu.com');
+
+    expect(employee.getRole()).toEqual('Employee');
+});
+
+console.log(new Employee('Splinter', 100, 'datrat@kungfu.com'));
 
 
