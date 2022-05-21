@@ -1,5 +1,33 @@
 {
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
+  },
+  "name": "team-maker",
+  "description": "Application to generate a team profile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hvphan1993/Team-Maker.git"
+  },
+  "keywords": [
+    "team",
+    "profile",
+    "generator"
+  ],
+  "author": "Hien Phan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hvphan1993/Team-Maker/issues"
+  },
+  "homepage": "https://github.com/hvphan1993/Team-Maker#readme"
 }
