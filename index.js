@@ -91,12 +91,14 @@ const addEmployee = () => {
             type: "list",
             name: "role",
             message: "Please select your employee's role.",
-            choices: ["Engineer", "Intern"]
+            choices: ["Engineer", "Intern", "Finished"],
+            
         },
         {
             type: "input",
             name: "name",
             message: "What is your employee's name?",
+            when: (input) => input.role != "Finished",
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -110,10 +112,13 @@ const addEmployee = () => {
             type: "input",
             name: "id",
             message: "What is your employee's ID number?",
+            when: (input) => input.role != "Finished",
             validate: idInput => {
                 if (isNaN(idInput)) {
                     console.log("Please enter your employee's ID.");
                     return false;
+                } else {
+                    return true;
                 }
             }
         },
@@ -121,6 +126,7 @@ const addEmployee = () => {
             type: "input",
             name: "email",
             message: "What is your employee's email address?",
+            when: (input) => input.role != "Finished",
             validate: email => {
                 valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
                if (valid) {
