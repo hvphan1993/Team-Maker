@@ -120,7 +120,7 @@ const teamProfilePage = function (employeeCards) {
 
   <body>
       <header>
-          <nav class="navbar" id="nav">
+          <nav class="navbar bg-danger" id="nav">
               <span class="navbar-brand mb-0 h1 w-100 text-center" id="nav-text">Team Profile Cards</span>
           </nav>
       </header>
