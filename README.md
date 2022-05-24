@@ -30,4 +30,4 @@ The purpose of this project was to enable a "manager" to fill out information ab
 
 ## Links
 - Github repository: https://github.com/hvphan1993/Team-Maker.git
-- Walkthrough video: 
+- Walkthrough video: https://drive.google.com/file/d/1ftHUrA1Do0Krcr1RacELu_kmsI9HZZqC/view
